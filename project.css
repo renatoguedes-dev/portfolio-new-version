@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Poppins:wght@400;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --edge-color-one: hsla(324, 70%, 63%);
+  --edge-color-two: hsla(222, 73%, 69%);
+  --edge-color-three: hsla(251, 100%, 82%);
+  --edge-color-four: hsla(194, 70%, 63%);
+  --edge-color-five: hsla(47, 78%, 61%);
+  --initial-delay-card-animation: 500ms;
+  --animation-card-duration: 800ms;
+  --animation-card-two: calc(var(--initial-delay-card-animation) * 2);
+  --animation-card-three: calc(var(--initial-delay-card-animation) * 3);
+  --animation-card-four: calc(var(--initial-delay-card-animation) * 4);
+  --animation-card-five: calc(var(--initial-delay-card-animation) * 5);
+  --animation-card-six: calc(var(--initial-delay-card-animation) * 6);
+  --animation-card-seven: calc(var(--initial-delay-card-animation) * 7);
+  --animation-card-eight: calc(var(--initial-delay-card-animation) * 8);
+  --animation-card-nine: calc(var(--initial-delay-card-animation) * 9);
+  --animation-card-ten: calc(var(--initial-delay-card-animation) * 10);
+  --animation-card-eleven: calc(var(--initial-delay-card-animation) * 11);
+  --animation-card-twelve: calc(var(--initial-delay-card-animation) * 12);
+}
 
 * {
   margin: 0;
@@ -12,25 +33,30 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  align-items: center;
+}
+
 .close-cards {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-left: 3rem;
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  left: -3%;
-  top: -2%;   
+  left: -2%;
+  top: -2%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 70px;
 }
 
-.project-slider {
+/* .project-slider {
   height: 100%;
   display: flex;
   align-items: center;
   overflow: hidden;
-}
+} */
 
 .cards-container {
   display: flex;
@@ -50,6 +76,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  margin: 2rem 0;
+  transform: translateX(400%);
 }
 
 .cards-info {
@@ -63,14 +94,6 @@ body {
   background-color: hsla(0, 0%, 10%, 0.8);
   color: white;
   padding: 1.5rem;
-}
-
-:root {
-  --edge-color-one: hsla(324, 70%, 63%, 0.4);
-  --edge-color-two: hsla(222, 73%, 69%, 0.4);
-  --edge-color-three: hsla(251, 100%, 82%, 0.4);
-  --edge-color-four: hsla(194, 70%, 63%, 0.4);
-  --edge-color-five: hsla(47, 78%, 61%, 0.4);
 }
 
 div.cards:nth-child(3n - 1) {
@@ -156,6 +179,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.5)
     ),
     url(./projects/project-admin-dashboard.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-five);
 }
 
 .library {
@@ -164,6 +189,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.5)
     ),
     url(./projects/project-library.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-six);
 }
 
 .calculator {
@@ -172,6 +199,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.6)
     ),
     url(./projects/project-calculator.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-four);
 }
 
 .etch-a-sketch {
@@ -180,6 +209,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.6)
     ),
     url(./projects/project-etch-a-sketch.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-seven);
 }
 
 .landing-page {
@@ -188,6 +219,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.5)
     ),
     url(./projects/project-landing-page.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-duration);
 }
 
 .restaurant-page {
@@ -196,6 +229,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.5)
     ),
     url(./projects/project-restaurant-page.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-three);
 }
 
 .rock-paper-scissors {
@@ -204,6 +239,8 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.5)
     ),
     url(./projects/project-rock-paper-scissors.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-eight);
 }
 
 .sign-up-form {
@@ -212,9 +249,11 @@ div.cards:nth-child(3n + 1) {
       rgba(255, 255, 255, 0.5)
     ),
     url(./projects/project-sign-up-form.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-two);
 }
 
-.transition-slide {
+/* .transition-slide {
   opacity: 1;
   transition: 1200ms;
   transform: translateX(0);
@@ -232,14 +271,25 @@ html.is-animating .transition-slide {
 
 html.is-animating .transition-show {
   opacity: 0;
+} */
+
+.swiper {
+  height: 100%;
 }
 
+.swiper-slide {
+  padding: 3rem;
+  display: flex;
+}
 
-.project-slider.active {
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-  /* transform: scale(1.002); */
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

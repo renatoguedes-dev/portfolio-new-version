@@ -11,7 +11,5 @@ function hideExpDetails() {
   experienceDetails.classList.remove("active");
 }
 
-if (dollarSign) {
-  dollarSign.addEventListener("mouseover", showExpDetails);
-  dollarSign.addEventListener("mouseout", hideExpDetails);
-}
+dollarSign.addEventListener("mouseover", showExpDetails);
+dollarSign.addEventListener("mouseout", hideExpDetails);
