@@ -2,7 +2,7 @@ const dollarSign = document.querySelector("#dollarSign");
 const experienceDetails = document.querySelector("#experienceDetails");
 
 function showExpDetails() {
-  if (window.innerWidth > 650) {
+  if (window.innerWidth > 1100) {
     experienceDetails.classList.add("active");
   }
 }

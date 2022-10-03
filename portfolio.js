@@ -7,9 +7,9 @@ const swiper = new Swiper(".mySwiper", {
   grabCursor: true,
 });
 
-if (slider) {
+if (slider && window.innerWidth > 1100) {
   slider.addEventListener("wheel", (evt) => {
-    // evt.preventDefault();
+    evt.preventDefault();
     slider.scrollLeft += evt.deltaY;
   });
 }

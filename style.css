@@ -35,7 +35,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: fade-in 2s linear forwards 400ms;
+  animation: fade-in 1.5s linear forwards 400ms;
 }
 
 .circle-one h3 {
@@ -144,7 +144,7 @@ div.show-projects {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: fade-in 2s linear forwards 400ms;
+  animation: fade-in 1.5s linear forwards 400ms;
 }
 
 .circle-three {
@@ -263,7 +263,7 @@ html.is-animating .transition-fade {
   }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 1100px) {
   body {
     position: relative;
     overflow: hidden;

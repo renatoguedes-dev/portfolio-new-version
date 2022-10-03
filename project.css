@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 :root {
-  --edge-color-one: hsla(324, 70%, 63%);
-  --edge-color-two: hsla(222, 73%, 69%);
-  --edge-color-three: hsla(251, 100%, 82%);
-  --edge-color-four: hsla(194, 70%, 63%);
-  --edge-color-five: hsla(47, 78%, 61%);
+  --edge-color-one: hsla(324, 70%, 63%, 0.5);
+  --edge-color-two: hsla(222, 73%, 69%, 0.5);
+  --edge-color-three: hsla(251, 100%, 82%, 0.5);
+  --edge-color-four: hsla(194, 70%, 63%, 0.5);
+  --edge-color-five: hsla(47, 78%, 61%, 0.5);
   --initial-delay-card-animation: 500ms;
   --animation-card-duration: 800ms;
   --animation-card-two: calc(var(--initial-delay-card-animation) * 2);
@@ -51,17 +51,9 @@ body {
   font-size: 70px;
 }
 
-/* .project-slider {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-} */
-
-.cards-container {
-  display: flex;
-  gap: 5rem;
-  margin: 3rem;
+.close-projects {
+  opacity: 0;
+  animation: fade-in 1.5s linear forwards 400ms;
 }
 
 .cards {
@@ -253,26 +245,6 @@ div.cards:nth-child(3n + 1) {
     var(--animation-card-two);
 }
 
-/* .transition-slide {
-  opacity: 1;
-  transition: 1200ms;
-  transform: translateX(0);
-}
-
-html.is-animating .transition-slide {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.transition-show {
-  opacity: 1;
-  transition: 500ms;
-}
-
-html.is-animating .transition-show {
-  opacity: 0;
-} */
-
 .swiper {
   height: 100%;
 }
@@ -291,5 +263,29 @@ html.is-animating .transition-show {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .swiper-wrapper {
+    gap: 200px;
+ 
+  }
+
+  .cards {
+    min-width: 300px;
+    min-height: 450px;
+    max-height: 650px;
+    margin-top: 4rem;
   }
 }
