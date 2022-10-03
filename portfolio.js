@@ -7,7 +7,7 @@ const swiper = new Swiper(".mySwiper", {
   grabCursor: true,
 });
 
-if (slider && window.innerWidth > 1100) {
+if (slider) {
   slider.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     slider.scrollLeft += evt.deltaY;
