@@ -277,13 +277,28 @@ div.cards:nth-child(3n + 1) {
 }
 
 @media all and (max-width: 650px) {
+  body {
+    position: relative;
+  }
+
+  .swiper-slide {
+    padding: 3rem 1.5rem;
+  }
+
   .cards {
     min-width: 300px;
     min-height: 450px;
     max-height: 650px;
-    margin-top: 3rem;
+    margin: 3rem 0 0 0;
     transform: none;
     animation: fade-in 1.5s linear forwards 400ms;
+    flex-grow: 1;
+  }
+
+  .close-cards {
+    left: 78%;
+    font-size: 30px;
+    top: 5%;
   }
 
   @keyframes fade-in {
