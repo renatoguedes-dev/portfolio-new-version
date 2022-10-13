@@ -165,44 +165,14 @@ div.cards:nth-child(3n + 1) {
   text-decoration: none;
 }
 
-.admin-dashboard {
+.todo-list {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url(./projects/project-admin-dashboard.png);
+    url(./projects/project-todo-list.png);
   animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-five);
-}
-
-.library {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url(./projects/project-library.png);
-  animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-six);
-}
-
-.calculator {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url(./projects/project-calculator.png);
-  animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-four);
-}
-
-.etch-a-sketch {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url(./projects/project-etch-a-sketch.png);
-  animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-seven);
+    var(--animation-card-duration);
 }
 
 .landing-page {
@@ -215,6 +185,16 @@ div.cards:nth-child(3n + 1) {
     var(--animation-card-duration);
 }
 
+.sign-up-form {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./projects/project-sign-up-form.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-three);
+}
+
 .restaurant-page {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
@@ -222,7 +202,47 @@ div.cards:nth-child(3n + 1) {
     ),
     url(./projects/project-restaurant-page.png);
   animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-three);
+    var(--animation-card-four);
+}
+
+.calculator {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(./projects/project-calculator.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-five);
+}
+
+.admin-dashboard {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./projects/project-admin-dashboard.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-six);
+}
+
+.library {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./projects/project-library.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-seven);
+}
+
+.etch-a-sketch {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(./projects/project-etch-a-sketch.png);
+  animation: right-to-left var(--animation-card-duration) ease-in forwards
+    var(--animation-card-eight);
 }
 
 .rock-paper-scissors {
@@ -232,17 +252,7 @@ div.cards:nth-child(3n + 1) {
     ),
     url(./projects/project-rock-paper-scissors.png);
   animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-eight);
-}
-
-.sign-up-form {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url(./projects/project-sign-up-form.png);
-  animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-two);
+    var(--animation-card-nine);
 }
 
 .swiper {
