@@ -7,8 +7,8 @@
   --edge-color-three: hsla(251, 100%, 82%, 0.5);
   --edge-color-four: hsla(194, 70%, 63%, 0.5);
   --edge-color-five: hsla(47, 78%, 61%, 0.5);
-  --initial-delay-card-animation: 500ms;
-  --animation-card-duration: 800ms;
+  --initial-delay-card-animation: 600ms;
+  --animation-card-duration: 600ms;
   --animation-card-two: calc(var(--initial-delay-card-animation) * 2);
   --animation-card-three: calc(var(--initial-delay-card-animation) * 3);
   --animation-card-four: calc(var(--initial-delay-card-animation) * 4);
@@ -182,7 +182,7 @@ div.cards:nth-child(3n + 1) {
     ),
     url(./projects/project-landing-page.png);
   animation: right-to-left var(--animation-card-duration) ease-in forwards
-    var(--animation-card-duration);
+    var(--animation-card-two);
 }
 
 .sign-up-form {
