@@ -38,6 +38,10 @@ body {
   align-items: center;
 }
 
+.my-projects {
+  display: none;
+}
+
 .close-cards {
   font-family: "Nunito", sans-serif;
   margin-left: 3rem;
@@ -292,23 +296,34 @@ div.cards:nth-child(3n + 1) {
   }
 
   .swiper-slide {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1rem;
   }
 
   .cards {
     min-width: 300px;
     min-height: 450px;
     max-height: 650px;
-    margin: 3rem 0 0 0;
+    margin: 3.5rem 0 0 0;
     transform: none;
     animation: fade-in 1.5s linear forwards 400ms;
     flex-grow: 1;
   }
 
+  .my-projects {
+    display: inline-flex;
+    position: absolute;
+    top: 4%;
+    left: 35%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 23px;
+
+  }
+
   .close-cards {
-    left: 78%;
+    right: -75%;
     font-size: 30px;
-    top: 5%;
+    top: 3%;
   }
 
   @keyframes fade-in {
